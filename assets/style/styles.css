@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.top {
+    height: 30px;
+    background-color: #333333;
+}
+
+.container-content {
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+}
+
+.content-left {
+    width: 50%;
+    height: 30px;
+    float: left;
+}
+
+.content-right {
+    width: 50%;
+    height: 28px;
+    float: right;
+    text-align: right;
+    margin-top: 2px;
+}
+
+.content-left ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.content-left li {
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.content-left a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.content-right img {
+    border: 0;
+    width: 26px;
+    height: 26px;
+    float: right;
+    margin-right: 4px;
+}
+
+.content-right input {
+    width: 110px;
+    height: 26px;
+    outline: 0;
+    float: right;
+}
+
+.main-top {
+    height: 95px;
+    background-color: #ffffff;
+}
+
+.main-container {
+    width: 100%;
+    height: 95px;
+    max-width: 1040px;
+    margin: auto;
+}
+
+.logo {
+    width: 230px;
+    height: 90px;
+    float: left;
+    margin-top: 5px;
+}
+
+.main-top .banner {
+    width: 650px;
+    height: 80px;
+    float: right;
+    margin-top: 7px;
+    background-color: #FF0000;
+}
+
+.menu {
+    height: 40px;
+    background-color: #FF0000;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    float: left;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+}
+
+.submenu {
+    width: 150px;
+    position: absolute;
+    display: none;
+}
+
+.submenu-item {
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+
+    background-color: #FF0000;
+}
+
+.submenu-item:hover {
+    background-color: #FF5555;
+}
+
+.news {
+    height: 50px;
+}
+
+.news .container-content {
+    height: 50px;
+}
+
+.news-area {
+    height: 28px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    margin: 10px auto;
+}
+
+.news-alert {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    background-color: #FF0000;
+    display: inline-block;
+
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.news-content {
+    height: 28px;
+    padding-left: 5px;
+    display: inline-block;
+
+    color: #000000;
+    line-height: 28px;
+}

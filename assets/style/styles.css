@@ -218,6 +218,7 @@ body {
 .carrousel {
     height: 335px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .carrousel-area {
@@ -272,4 +273,60 @@ body {
 
 .activated {
     background-color: #FF0000;
+}
+
+.main-area-news {
+    width: 430px;
+    height: 420px;
+    float: left;
+}
+
+.sided-area-news {
+    width: 320px;
+    height: 420px;
+    float: left;
+}
+
+.sided-news {
+    float: left;
+    height: 88px;
+    margin: 7px 0;
+    text-align: left;
+}
+
+.sided-news-img {
+    width: 80px;
+    height: 80px;
+    padding: 3px;
+    border: 1px solid #cccccc;
+    float: left;
+}
+
+.sided-news-title {
+    width: 226px;
+    float: left;
+    margin-left: 6px;
+    font-size: 16px;
+}
+
+.sided-news-info {
+    width: 226px;
+    font-size: 12px;
+    margin-left: 6px;
+    color: #cccccc;
+    float: left;
+}
+
+.big-news {
+    margin-left: 10px;
+}
+
+.big-news .sided-news-img, .big-news .sided-news-img img {
+    width: 384px;
+    height: 222px;
+}
+
+.big-news .sided-news-title {
+    width: 384px;
+    font-size: 30px;
 }

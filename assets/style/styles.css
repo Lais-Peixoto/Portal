@@ -353,7 +353,7 @@ a {
     margin-left: 10px;
 }
 
-.big-news .sided-news-img, .big-news .sided-news-img img {
+.big-news .sided-news-img, .big-news img {
     width: 384px;
     height: 222px;
 }
@@ -363,12 +363,22 @@ a {
     font-size: 30px;
 }
 
+.menu-mobile-img {
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
 
 @media only screen and (min-width:890px) and (max-width:1040px) {
 
     .container-content,
     .main-container {
         max-width: 890px;
+    }
+
+    #menu-mobile {
+        display: block !important;
     }
 
     .main .content-left {
@@ -383,7 +393,7 @@ a {
         width: 259px;
     }
 
-    .big-news .sided-news-img, .big-news .sided-news-img img {
+    .big-news img {
         width: 250px;
     }
 
@@ -410,6 +420,10 @@ a {
         display: none;
     }
 
+    #menu-mobile {
+        display: block !important;
+    }
+
     .main .content-right {
         display: none;
     }
@@ -427,7 +441,7 @@ a {
         width: 415px;
     }
 
-    .big-news .sided-news-img, .big-news .sided-news-img img {
+    .big-news img {
         width: 415px;
     }
 
@@ -464,6 +478,27 @@ a {
         display: none;
     }
 
+    .menu-mobile-img {
+        display: block;
+    }
+
+    .menu ul {
+        position: absolute;
+        background-color: #FF0000;
+        z-index: 10;
+        display: none;
+    }
+
+    .menu li {
+        float: none;
+        height: auto;
+    }
+
+    .submenu {
+        position: static;
+        display: block;
+    }
+
     .urgent-news {
         display: none;
     }
@@ -479,19 +514,28 @@ a {
     }
 
     .main-area-news {
-        width: 446px;
+        width: 320px;
+        height: auto;
+    }
+
+    .sided-news{
+        width: 320px;
+        margin: 0 10px;
+        float: none;
+        clear: both;
+        padding-top: 15px;
     }
 
     .big-news .sided-news-img {
-        width: 415px;
+        width: 290px;
     }
 
-    .big-news .sided-news-img, .big-news .sided-news-img img {
-        width: 415px;
+    .big-news img {
+        width: 290px;
     }
 
     .big-news .sided-news-title {
-        width: 415px;
+        width: 206px;
         font-size: 25px;
     }
 }

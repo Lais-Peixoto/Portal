@@ -13,6 +13,7 @@ window.onload = function () {
 };
 
 window.onresize = function () {
+    
     let carouselWidth = document.getElementById("carrousel").offsetWidth; // Guarda o tamanho atual do carousel
     let objects = document.getElementsByClassName("slide"); // Seleciona todos os slides da aparesentação
 
@@ -20,6 +21,7 @@ window.onresize = function () {
     for (let i = 0; i < objects.length; i++) {
         objects[i].style.width = carouselWidth + "px";
     };
+
 }
 
 function slideMove() {

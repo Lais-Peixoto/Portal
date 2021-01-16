@@ -3,16 +3,27 @@ let slideCount = -1;
 window.onload = function () {
     setInterval(slideMove, 5000); // aplica a função slideMove a cada 5s
 
-    let slideWidth = document.getElementById("carrousel").offsetWidth; //tamanho da janela
-    let objects = document.getElementsByClassName("slide"); // tamanho de cada slide guardado no array
+    let carouselWidth = document.getElementById("carrousel").offsetWidth; // Guarda o tamanho atual do carousel
+    let objects = document.getElementsByClassName("slide"); // Seleciona todos os slides da aparesentação
 
+    // Atualiza o tamanho do carousel conforme a tela vai diminuindo
     for (let i = 0; i < objects.length; i++) {
-        objects[i].style.width = slideWidth;
+        objects[i].style.width = carouselWidth + "px";
     };
 };
 
+window.onresize = function () {
+    let carouselWidth = document.getElementById("carrousel").offsetWidth; // Guarda o tamanho atual do carousel
+    let objects = document.getElementsByClassName("slide"); // Seleciona todos os slides da aparesentação
+
+    // Atualiza o tamanho do carousel conforme a tela vai diminuindo
+    for (let i = 0; i < objects.length; i++) {
+        objects[i].style.width = carouselWidth + "px";
+    };
+}
+
 function slideMove() {
-    let slideWidth = document.getElementById("carrousel").offsetWidth;
+    let carouselWidth = document.getElementById("carrousel").offsetWidth;
 
     if (slideCount >= 3) {
         slideCount = 0;
@@ -20,18 +31,25 @@ function slideMove() {
         slideCount++;
     }
 
+    // Alterna a cor da bolinha para vermelho de acordo com a posição do slide
     let slideControl = document.getElementsByClassName("control")[slideCount];
     slideControl.classList.add("activated");
     setTimeout(function () {
       slideControl.classList.remove("activated");
     }, 5000);
     
-    document.getElementsByClassName("carrousel-area")[0].style.marginLeft = "-" + (slideWidth * slideCount) + "px";
+    // Movimenta os slides para a esquerda 
+    document.getElementsByClassName("carrousel-area")[0].style.marginLeft = "-" + (carouselWidth * slideCount) + "px";
 };
 
 function changeSlide(pos) {
     slideCount = pos;
-    let slideWidth = document.getElementById("carrousel").offsetWidth;
+    let carouselWidth = document.getElementById("carrousel").offsetWidth;
 
-    document.getElementsByClassName("carrousel-area")[0].style.marginLeft = "-" + (slideWidth * slideCount) + "px";
+    // Muda o slide quando a bolinha é clicada mostrando o slide da posição selecionada
+    document.getElementsByClassName("carrousel-area")[0].style.marginLeft = "-" + (carouselWidth * slideCount) + "px";
 };
+
+
+
+
